@@ -1,0 +1,942 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+
+    font-family: 'Outfit', sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff5fa,
+            #ffffff,
+            #f1fbff
+        );
+
+    color: #222;
+
+    padding-bottom: 45px;
+}
+
+
+/* ================= HEADER ================= */
+
+.header
+{
+    position: fixed;
+
+    top: 0;
+    left: 2.5%;
+
+    width: 95%;
+
+    min-height: 70px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+
+    background:
+        rgba(255,255,255,0.92);
+
+    border-radius: 0 0 25px 25px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.12);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 100;
+}
+
+
+.head
+{
+    color: rgb(247,72,141);
+
+    font-size: 32px;
+
+    font-weight: 800;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar
+{
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 75%;
+
+    padding: 8px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(247,72,141,0.1),
+            rgba(95,207,232,0.1)
+        );
+}
+
+
+.navbar a
+{
+    padding: 8px 12px;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    border-radius: 12px;
+
+    transition: 0.25s ease;
+}
+
+
+.navbar a:hover
+{
+    background:
+        rgb(247,72,141);
+
+    color: white;
+
+    transform:
+        translateY(-2px);
+}
+
+
+.navbar .active
+{
+    background:
+        rgb(247,72,141);
+
+    color: white;
+}
+
+
+/* ================= MAIN ================= */
+
+.main
+{
+    width: min(1100px, 94%);
+
+    margin:
+        105px auto 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+}
+
+
+/* ================= COMMON CARD ================= */
+
+.card
+{
+    width: 100%;
+
+    padding: 25px;
+
+    background:
+        rgba(255,255,255,0.95);
+
+    border:
+        1px solid
+        rgba(247,72,141,0.15);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,0.07);
+
+    transition: 0.25s ease;
+}
+
+
+.card:hover
+{
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(0,0,0,0.1);
+}
+
+
+/* ================= PG INFORMATION ================= */
+
+.aboutpg
+{
+    display: grid;
+
+    grid-template-columns:
+        220px 1fr;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+
+.pgimage
+{
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.pglogo
+{
+    width: 180px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    box-shadow:
+        4px 5px 12px
+        rgba(247,72,141,0.3);
+}
+
+
+.section-label
+{
+    color:
+        rgb(247,72,141);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 5px;
+}
+
+
+.pginfo h2
+{
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+
+.location
+{
+    font-size: 17px;
+
+    margin-bottom: 18px;
+
+    color:
+        #555;
+}
+
+
+.pgdetails
+{
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.pgdetails p
+{
+    padding: 8px 12px;
+
+    background:
+        #fff0f6;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title
+{
+    margin-bottom: 20px;
+}
+
+
+.section-title h2
+{
+    font-size: 25px;
+
+    color:
+        #222;
+}
+
+
+.section-title p
+{
+    margin-top: 3px;
+
+    color:
+        #777;
+
+    font-size: 14px;
+}
+
+
+/* ================= ROOM STRUCTURE ================= */
+
+.room-structure
+{
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.room-card
+{
+    padding: 18px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f6,
+            #effcff
+        );
+
+    border:
+        1px solid
+        rgba(247,72,141,0.15);
+
+    transition: 0.25s ease;
+}
+
+
+.room-card:hover
+{
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 8px 18px
+        rgba(0,0,0,0.1);
+}
+
+
+.room-icon
+{
+    font-size: 30px;
+
+    margin-bottom: 5px;
+}
+
+
+.room-card h3
+{
+    color:
+        rgb(247,72,141);
+}
+
+
+.room-card p
+{
+    color:
+        #777;
+
+    font-size: 13px;
+}
+
+
+/* ================= OWNER ================= */
+
+.owner-content
+{
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.ownerpic
+{
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border:
+        5px solid
+        #fff;
+
+    box-shadow:
+        0 5px 18px
+        rgba(247,72,141,0.3);
+}
+
+
+.owner-details
+{
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.owner-details h2
+{
+    font-size: 25px;
+}
+
+
+.owner-details p
+{
+    color:
+        #555;
+}
+
+
+.verified
+{
+    width: fit-content;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background:
+        #e7fff0;
+
+    color:
+        #178744 !important;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* ================= STATUS ================= */
+
+.status-grid
+{
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.status-box
+{
+    padding: 18px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffe5f1,
+            #f8d8ff,
+            #e8e7ff,
+            #cdefff
+        );
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,0.05);
+}
+
+
+.status-box span
+{
+    font-size: 25px;
+}
+
+
+.status-box p
+{
+    margin-top: 5px;
+
+    color:
+        #555;
+
+    font-size: 13px;
+}
+
+
+.status-box strong
+{
+    display: block;
+
+    margin-top: 4px;
+
+    color:
+        #222;
+
+    font-size: 15px;
+}
+
+
+/* ================= FACILITIES ================= */
+
+.pgfacilities
+{
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+
+.facility
+{
+    min-height: 100px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    text-align: center;
+
+    padding: 12px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f6,
+            #effcff
+        );
+
+    border:
+        1px solid
+        rgba(247,72,141,0.15);
+
+    transition: 0.25s ease;
+}
+
+
+.facility:hover
+{
+    transform:
+        translateY(-4px)
+        scale(1.02);
+
+    box-shadow:
+        0 8px 18px
+        rgba(0,0,0,0.1);
+}
+
+
+.facility span
+{
+    font-size: 30px;
+}
+
+
+.facility p
+{
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* ================= REVIEW ================= */
+
+.review
+{
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.review-box
+{
+    padding: 20px;
+
+    border-radius: 18px;
+
+    background:
+        #fff7fb;
+
+    border:
+        1px solid
+        rgba(247,72,141,0.15);
+}
+
+
+.review-box h3
+{
+    margin-bottom: 12px;
+
+    color:
+        rgb(247,72,141);
+}
+
+
+.review-box textarea
+{
+    width: 100%;
+
+    min-height: 120px;
+
+    resize: vertical;
+
+    padding: 12px;
+
+    border:
+        1px solid
+        #ddd;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-family:
+        'Outfit', sans-serif;
+
+    font-size: 14px;
+}
+
+
+.review-box textarea:focus
+{
+    border:
+        2px solid
+        rgb(247,72,141);
+}
+
+
+.review-box button
+{
+    margin-top: 12px;
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background:
+        rgb(247,72,141);
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        2px 3px 5px
+        rgba(0,0,0,0.25);
+
+    transition: 0.25s ease;
+}
+
+
+.review-box button:hover
+{
+    transform:
+        translateY(-2px);
+
+    background:
+        rgb(220,55,120);
+}
+
+
+.complaint h3
+{
+    color:
+        #d65a00;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer
+{
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 35px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background:
+        black;
+
+    color:
+        white;
+
+    font-size: 13px;
+
+    z-index: 100;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 850px)
+{
+    .header
+    {
+        width: 96%;
+
+        padding:
+            8px 12px;
+    }
+
+
+    .head
+    {
+        font-size: 25px;
+    }
+
+
+    .navbar
+    {
+        width: 80%;
+    }
+
+
+    .navbar a
+    {
+        padding:
+            6px;
+
+        font-size: 13px;
+    }
+
+
+    .aboutpg
+    {
+        grid-template-columns:
+            160px 1fr;
+    }
+
+
+    .pglogo
+    {
+        width: 150px;
+        height: 170px;
+    }
+
+
+    .room-structure,
+    .status-grid
+    {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .pgfacilities
+    {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px)
+{
+    .header
+    {
+        position: relative;
+
+        top: auto;
+        left: auto;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        border-radius: 0 0 20px 20px;
+    }
+
+
+    .navbar
+    {
+        width: 100%;
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+
+        gap: 5px;
+    }
+
+
+    .navbar a
+    {
+        white-space: nowrap;
+
+        font-size: 11px;
+    }
+
+
+    .main
+    {
+        width: 94%;
+
+        margin-top: 25px;
+    }
+
+
+    .aboutpg
+    {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+
+    .pgdetails
+    {
+        justify-content: center;
+    }
+
+
+    .pginfo h2
+    {
+        font-size: 24px;
+    }
+
+
+    .owner-content
+    {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .owner-details
+    {
+        align-items: center;
+    }
+
+
+    .room-structure,
+    .status-grid
+    {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .pgfacilities
+    {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .review
+    {
+        grid-template-columns: 1fr;
+    }
+
+
+    .card
+    {
+        padding: 18px;
+    }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 400px)
+{
+    .room-structure,
+    .status-grid,
+    .pgfacilities
+    {
+        grid-template-columns: 1fr;
+    }
+
+
+    .pgdetails
+    {
+        flex-direction: column;
+    }
+
+
+    .pgdetails p
+    {
+        width: 100%;
+    }
+}
