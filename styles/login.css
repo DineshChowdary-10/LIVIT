@@ -20,13 +20,6 @@ body
 
     font-family: 'Outfit', sans-serif;
 
-    background:
-        linear-gradient(
-            135deg,
-            rgb(247, 72, 141),
-            black 50%,
-            rgb(95, 207, 232)
-        );
 
     /* overflow-x: hidden; */
 }

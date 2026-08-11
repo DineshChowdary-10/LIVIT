@@ -17,13 +17,7 @@ body
     justify-content: center;
     align-items: center;
 
-    background:
-        linear-gradient(
-            135deg,
-            rgb(247, 72, 141),
-            black 50%,
-            rgb(95, 207, 232)
-        );
+   
 
     font-family:
         Arial,
